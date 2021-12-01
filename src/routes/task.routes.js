@@ -14,6 +14,9 @@ router.get('/task/:id', getTaskCtrlId); // Obtener una tarea por su id
 router.post('/task', postTaskCtrl); // completar la lógica -> actividad
 router.put('/task/:id', putTaskCtrl); // completar la lógica -> actividad
 router.delete('/task/:id', deleteTaskCtrl); // completar la lógica -> actividad
+router.get('/',(req, res)=>{
+  res.end('hola que hay')
+})
 
 // post -> controlador -> servicio
 // put -> controlador -> servicio
